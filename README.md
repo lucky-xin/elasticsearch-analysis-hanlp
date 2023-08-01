@@ -116,6 +116,7 @@ IOAdapter=com.hankcs.io.adapter.S3IOAdapter
 - S3_FORCE_PATH_STYLE=[如果存储服务为非aws，如aliyun oss，minio则该值必须为false]
 - S3_BUCKET=[存储桶]
 - S3_KEY=[存储key前缀]
+
 鄙人aliyun oss目录如下，环境变量S3_KEY=es，S3_FORCE_PATH_STYLE=false，S3_ENDPOINT=oss-cn-shenzhen.aliyuncs.com
 ![img.png](img/img.png)
 ### 4. 重启Elasticsearch
