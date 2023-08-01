@@ -1,0 +1,21 @@
+grant {
+	// needed to generate runtime classes
+	permission java.io.FilePermission "<<ALL FILES>>", "read";
+
+    permission java.lang.reflect.ReflectPermission "suppressAccessChecks";
+    permission java.lang.RuntimePermission "accessClassInPackage.sun.reflect";
+    permission java.lang.RuntimePermission "accessDeclaredMembers";
+    permission java.util.PropertyPermission "*","read,write";
+    permission javax.security.auth.AuthPermission "getSubject";
+    permission javax.security.auth.AuthPermission "doAsPrivileged";
+    permission javax.management.MBeanTrustPermission "register";
+    permission javax.management.MBeanServerPermission "*";
+    permission javax.management.MBeanPermission "com.amazonaws.metrics.*#-[*:*]","instantiate,registerMBean,unregisterMBean";
+
+    // classloader
+    permission java.lang.RuntimePermission "setContextClassLoader";
+    permission java.lang.RuntimePermission "getClassLoader";
+    // socket
+    permission java.net.SocketPermission "*", "accept,connect,resolve";
+
+};

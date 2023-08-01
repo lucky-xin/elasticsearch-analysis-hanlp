@@ -1,0 +1,6 @@
+target
+docs/_build
+.idea
+*.iml
+*.DS_Store
+libs
