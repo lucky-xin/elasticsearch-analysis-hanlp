@@ -321,7 +321,7 @@ POST test/_analyze
 }
 ```
 
-结果：
+结果：type为[HanLP词性](https://www.hankcs.com/nlp/part-of-speech-tagging.html)
 
 ```text
 {
